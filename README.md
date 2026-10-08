@@ -6,6 +6,40 @@
 
 ## BENCHMARK Table
 
+## Results of PID 
+### Lap1
+<img width="604" height="190" alt="image" src="https://github.com/user-attachments/assets/b583487c-a1c3-4c99-a0b5-c7dc09ccea68" />
+
+### Lap2
+<img width="605" height="220" alt="image" src="https://github.com/user-attachments/assets/a3acecba-b7e7-4a71-98f4-1c90c673c6a2" />
+
+### Lap3
+<img width="605" height="220" alt="image" src="https://github.com/user-attachments/assets/0bc54ba6-613a-4fcf-af8d-42fcb9984cc8" />
+
+
+## Results of Pure Pursuit 
+### Lap1
+<img width="601" height="212" alt="image" src="https://github.com/user-attachments/assets/b2a19d0f-7d00-4f2f-9c48-2f140691114c" />
+
+### Lap2
+<img width="601" height="212" alt="image" src="https://github.com/user-attachments/assets/2d9404d7-6a70-44c0-97c7-a66796fdbc23" />
+
+### Lap3
+<img width="601" height="212" alt="image" src="https://github.com/user-attachments/assets/786e2732-05d0-4980-880d-ff7615bb0a84" />
+
+
+## Results of MPC 
+### Lap1
+<img width="601" height="212" alt="image" src="https://github.com/user-attachments/assets/75e162e8-b776-4baf-9f54-1ba6bf13581b" />
+
+### Lap2
+<img width="601" height="212" alt="image" src="https://github.com/user-attachments/assets/611b0474-bc1c-4dff-8f9c-754e6d6034c8" />
+
+### Lap3
+<img width="601" height="212" alt="image" src="https://github.com/user-attachments/assets/60502891-a1c0-40aa-b063-d973b46916dc" />
+
+
+
 | Controller Mode | Best Lap Time (s) | Top Speed (m/s) | Mean CTE (m) | Max CTE (m) | RMS CTE (m) | Laps Completed / Status |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Lateral PID (Reactive) | 78.86 | 7.5 | 0.394 | 2.75 | 0.558 | 3 |
