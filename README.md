@@ -1,16 +1,17 @@
-Name : Adham Mostafa Abdelmoez
-mail : ad7mostafa@gmail.com 
-phone number : 01094572282
+## Name : Adham Mostafa Abdelmoez
+### Mail : ad7mostafa@gmail.com 
+### Phone Number : 01094572282
 
-### Full documentation and mathematical formulations are included in the pdf file.
+#### Full documentation and mathematical formulations are included in the pdf file.
 
-### BENCHMARK Table
+## BENCHMARK Table
 
-  Controller Mode 	      Best Lap Time (s) 	      Top Speed (m/s) 	      Mean CTE (m) 	      Max CTE (m) 	      RMS CTE (m) 	      Laps Completed / Status
+| Controller Mode | Best Lap Time (s) | Top Speed (m/s) | Mean CTE (m) | Max CTE (m) | RMS CTE (m) | Laps Completed / Status |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Lateral PID (Reactive) | 78.86 | 7.5 | 0.394 | 2.75 | 0.558 | 3 |
+| Pure Pursuit (Preview) | 69.4 | 8.1 | 0.030 | 0.031 | 0.053 | 3 |
+| MPC (Optimal) | 62.4 | 7.2 | 0.072 | 0.51 | 0.101 | 3 |
 
-Lateral PID (Reactive) 	      78.86 	                    7.5 	                0.394	              2.75 	             0.558 	                      3
-Pure Pursuit (Preview) 	       69.4 	                    8.1	                  0.030 	            0.031 	           0.053	                      3
-MPC (Optimal) 	              62.4 	                      7.2 	                0.072 	            0.51 	             0.101	                      3
 
 
 Model Predictive Control (MPC) is the best option because it actively plans for the future instead of just reacting to the present, by choosing the path with the least cost considering car limits and constraints.
@@ -23,14 +24,14 @@ Model Predictive Control (MPC) is the best option because it actively plans for 
   MPC: This controller drives like a professional human racer. It looks far ahead and uses a mathematical model to simulate the physics of the entire upcoming track. Before it even reaches a corner, it calculates the perfect combination of steering and gas to take the fastest path while safely obeying the car's actual mechanical limits.
 
 
-### MPPI
+## MPPI
 
 Model Predictive Path Integral is an advanced control algorithm used to steer complex systems like robots and self-driving cars.
 It belongs to the family Model Predictive Control (MPC).
 Instead of trying to solve incredibly complex, exact mathematical equations to find the perfect route, MPPI uses a sampling-based approach.
 It uses computing power and probability to "guess" thousands of possible futures, evaluate them, and combine them to find the best possible steering and throttling commands.
 
-HOW DOES IT WORK?
+### HOW DOES IT WORK?
 
 The algorithm operates on a continuous loop, looking slightly into the future. These are the steps:
 
@@ -40,7 +41,7 @@ The algorithm operates on a continuous loop, looking slightly into the future. T
 
   2-Simulation: It simulates where the system will end up for every single one of those random sequences over a short horizon.
 
-  3-Cost Evaluation: Each simulated path is graded using a cost function. If a path hits an obstacle or deviates from the target, it gets a high penalty. If it stays safe and on target, it gets a low cost.
+  3-Cost Evaluation: Each simulated path is graded using a cost function. If a path hits an obstacle or deviates from the target, it gets a high penalty. If it stays safe and on target, it gets a     low cost.
 
   4-Path Integration: Instead of just picking the single best path, it takes a weighted average of all the simulated paths. The paths with the lowest costs are given the highest weights.
   This creates a smooth, highly optimized control signal .
@@ -50,11 +51,11 @@ The algorithm operates on a continuous loop, looking slightly into the future. T
 
 Because MPPI relies on simulating thousands of futures simultaneously, its implementation requires modern hardware and parallel processing.
 
-   Hardware: MPPI is almost always implemented on Graphics Processing Units GPUs. GPUs are designed to handle thousands of simple math operations at the exact same time, making them perfect for parallel sampling.
+   Hardware: MPPI is almost always implemented on Graphics Processing Units GPUs. GPUs are designed to handle thousands of simple math operations at the exact same time, making them perfect for       parallel sampling.
 
    Mathematics: We define a system state equation and a cost function S(x, u). The algorithm generates random noise from a Gaussian distribution to create the samples.
 
-Integration MPPI with AI and Neural Networks 
+### Integration of MPPI with AI and Neural Networks 
 
   Integrating Artificial Intelligence and Deep Neural Networks with MPPI replaces rigid physics equations with learned dynamic models trained directly on real sensor data.
   In the future, this synergy unlocks truly adaptive control in high-stakes environments allowing autonomous vehicles, robotic systems to instantaneously adjust.
