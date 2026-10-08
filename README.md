@@ -3,6 +3,8 @@
 ### Phone Number : 01094572282
 
 ## Full documentation and mathematical formulations are included in the pdf file.
+[Documentation.pdf](https://github.com/user-attachments/files/33205552/Documentation.pdf)
+
 
 ## BENCHMARK Table
 
